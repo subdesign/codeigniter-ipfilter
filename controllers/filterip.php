@@ -7,6 +7,7 @@ class Filterip extends CI_Controller {
 	{
 		$this->load->helper('ipfilter');
 
+		// these are the logged IP addresses, possibly read from DB
 		$logs = array(
 			'192.168.4.56',
 			'192.168.35.68',
@@ -18,7 +19,7 @@ class Filterip extends CI_Controller {
 
 		foreach($logs as $item)
 		{
-			// exclude ips from the log, if they are in the filter list
+			// exclude ips from the log if they are in the filter list
 			if( ! ipfilter($item) )
 			{
 				$add_to_log[] = $item;
