@@ -1,6 +1,6 @@
 # IP filter Codeigniter helper
 
-With IP filter helper you can filter for example logged IP addresses from DB, and show only the ones that are allowed, even using wildcards on IP segments.
+With IP filter helper you can filter for example logged IP addresses from DB, and show only the ones that are allowed, even using wildcards on IP segments, like "192.168.*.*" .
 
 ***
 
